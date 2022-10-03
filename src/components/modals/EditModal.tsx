@@ -60,7 +60,12 @@ const EditModal = ({ edit, cancel, isOpen, user }: EditModalProps) => {
             <h1 className="text-center text-base">{user?.name}</h1>
           </Form.Item>
           <Form.Item name="email" label="Email" rules={[{ required: true }]}>
-            <Input size="large" placeholder="Email" prefix={<MailOutlined />} />
+            <Input
+              size="large"
+              placeholder="Email"
+              data-cy="editModalEmail"
+              prefix={<MailOutlined />}
+            />
           </Form.Item>
           <Form.Item name="phone" label="Phone" rules={[{ required: true }]}>
             <Input

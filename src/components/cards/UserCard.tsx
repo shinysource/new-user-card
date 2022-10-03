@@ -50,6 +50,7 @@ const UserCard = ({ user, loading, favorite, remove, edit }: UserCardProps) => {
           ),
           <EditOutlined
             key="edit"
+            data-cy={`item${user.id}`}
             onClick={() => edit(user)}
             data-testid="edit-button"
           />,

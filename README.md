@@ -19,4 +19,5 @@ The frontend challenge to build User Card with actions - favorite, setting, dele
 ## Commands for devlopment
 
 - `yarn test` to test the app
+<<<<<<< HEAD
 - `yarn run build` to build a production bundle
